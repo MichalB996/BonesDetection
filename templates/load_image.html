@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #6b6b6b;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.buttonOval {
+	border-radius: 20;
+}
+
+.buttonNext:hover {
+  background-color: green;
+}
+
+.buttonBack:hover {
+  background-color: red;
+}
+
+p {
+  background-color: #c2c2c2;
+  padding: 10px;
+}
+
+h2 {
+  background-color: #a3a3a3;
+  padding: 20px;
+}
+
+body {
+ background-color: #ededed;
+}
+
+</style>
+</head>
+
+<body>
+<form method="post" enctype="multipart/form-data">
+  <div>
+  	<center>
+    <h2>Choose files to upload</h2>
+    <p>Image: <input type=file name="file_image" accept=".jpg, .jpeg, .png"></p>
+    <p>Mask: <input type=file name="file_mask" accept=".jpg, .jpeg, .png"></p>
+    </center>
+  </div>
+  <center>
+  <div>
+  	<input type="submit" value="Cancel" name="button" class="button buttonOval buttonBack"> 
+  	<input type="submit" value="Submit" name="button" class="button buttonOval buttonNext"> 
+  </div>
+  </center>
+</form>
+</body>
+</html>
